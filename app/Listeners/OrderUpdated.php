@@ -75,6 +75,6 @@ class OrderUpdated
     private static function sendMailToOrderStatus(array $mailtpl, array $order, string $to) :void
     {
         $info = replace_mail_tpl($mailtpl, $order);
-        MailSend::dispatch($to, $info['tpl_name'], $info['tpl_content']);
+        MailSend::dispatchNow($to, $info['tpl_name'], $info['tpl_content']);
     }
 }
