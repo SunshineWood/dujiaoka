@@ -11,6 +11,7 @@ class TokenQueryController extends BaseController
     {
         // 获取查询参数中的令牌
         $tokenKey = $request->input('key');
+        $tokenKey = substr($tokenKey, 3);
         // Default user_id
         $user_id = 1;
         // 使用 mysql_secondary 数据库连接查询 tokens 表
