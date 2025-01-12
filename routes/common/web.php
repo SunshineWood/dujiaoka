@@ -32,6 +32,10 @@ Route::group(['middleware' => ['dujiaoka.boot'],'namespace' => 'Home'], function
     Route::post('search-order-by-email', 'OrderController@searchOrderByEmail');
     // 通过浏览器查询
     Route::post('search-order-by-browser', 'OrderController@searchOrderByBrowser');
+
+    Route::get('/token-query', [App\Http\Controllers\TokenQueryController::class, 'tokenQuery'])->name('token.query');
+
+    Route::get('/token-query-by-key', [App\Http\Controllers\TokenQueryController::class, 'index'])->name('token-query-by-key');
 });
 
 Route::group(['middleware' => ['install.check'],'namespace' => 'Home'], function () {

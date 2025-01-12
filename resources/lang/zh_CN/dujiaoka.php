@@ -50,6 +50,7 @@ return [
     'home_page' => '首页',
     'group_all' => '全部',
     'order_search' => '订单查询',
+    'token_query' => '令牌查询',
     'site_announcement' => '公告',
     'price' => '价格',
     'wholesale_discount' => '批发价',
@@ -144,6 +145,7 @@ return [
         'home' => '首页',
         'bill' => '订单确认',
         'order-detail' => '订单详情',
-        'order-search' => '订单查询'
+        'order-search' => '订单查询',
+        'token_query' => '令牌查询'
     ]
 ];
