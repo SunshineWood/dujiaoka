@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-6">
             	<div class="footer-links">
-                    <a href="http://beian.miit.gov.cn/">京ICP备2025105153号-1</a>
+                    Powered by <a href="https://github.com/assimon/dujiaoka">@独角数卡.</a>
                 </div>
             </div>
             <div class="col-md-6">

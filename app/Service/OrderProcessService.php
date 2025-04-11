@@ -472,7 +472,7 @@ class OrderProcessService
         $mailBody = replace_mail_tpl($tpl, $mailData);
         $manageMail = dujiaoka_config_get('manage_email', '');
         // 邮件发送
-        MailSend::dispatchNow($manageMail, $mailBody['tpl_name'], $mailBody['tpl_content']);
+        MailSend::dispatch($manageMail, $mailBody['tpl_name'], $mailBody['tpl_content']);
         return $order;
     }
 
@@ -519,7 +519,7 @@ class OrderProcessService
         $tpl = $this->emailtplService->detailByToken('card_send_user_email');
         $mailBody = replace_mail_tpl($tpl, $mailData);
         // 邮件发送
-        MailSend::dispatchNow($order->email, $mailBody['tpl_name'], $mailBody['tpl_content']);
+        MailSend::dispatch($order->email, $mailBody['tpl_name'], $mailBody['tpl_content']);
         return $order;
     }
 
